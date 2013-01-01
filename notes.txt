@@ -1,0 +1,35 @@
+NFC_java.elf
+
+file name length: 0x20 fixed
+
+struct unk_sec {
+    u32 type = 0x11;
+    u32 size1;
+    u32 ver1;
+    u32 unk3;
+    u32 ver2; // same as ver1
+    u32 unk5;
+    u32 size2;
+    u8[0x20] name;
+    u32 unk7;
+    u8[len] data;
+}
+
+struct ump {
+    u32 unk3;
+    u32 ver2; // same as ver1
+    u32 unk5;
+    u32 file_size;
+    u8[0x20] name;
+    u32 unk7;
+    u8[len] data;
+}
+
+
+0x364b138
+0x36db944 is start of webcam elf
+
+http://dc343.4shared.com/doc/xQ4yb9Da/preview.html
+http://forum.gsmhosting.com/vbb/8963200-post11.html
+http://sc0ty.pl/2011/09/howto-disassembing-blackberry-software/
+
